@@ -8,6 +8,7 @@ import com.stuart.hello_rest_db.modul.ProductRepository;
 import jdk.nashorn.internal.runtime.options.Option;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -91,4 +92,5 @@ public class RestController {
     void deleteAll(){
         repository.deleteAll();
     }
+
 }
