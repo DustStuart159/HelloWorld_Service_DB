@@ -57,11 +57,4 @@ public class GuiController {
         return "redirect:/crud";
     }
 
-    @RequestMapping("/api")
-    public String showApiInfo(Model model){
-        Product product = new Product();
-        model.addAttribute("product", product);
-
-        return "api_info";
-    }
 }
